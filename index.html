@@ -7,124 +7,181 @@
     <title>Adiyaksa Subhi</title>
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
 
-        body {
-            margin: 0;
-            padding: 20px;
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: linear-gradient(135deg, #fdfbf7, #eee5d8, #f5efe6);
-            color: #514638;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        nav {
-            text-align: center;
-            margin-bottom: 25px;
-            font-size: 16px;
-        }
+/* BACKGROUND UTAMA */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #334155
+    );
+    color: #f8fafc;
+    min-height: 100vh;
+}
 
-        nav a {
-            color: #80694c;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 5px;
-        }
+/* MENU NAVIGASI */
+nav {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
 
-        .biodata {
-            max-width: 550px;
-            margin: 35px auto;
-            padding: 30px 25px;
-            background: #ffffff;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(100, 80, 50, 0.13);
-            border-top: 6px solid #b69b78;
-        }
+nav a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    transition: 0.3s;
+}
 
-        .biodata h2 {
-            text-align: center;
-            color: #80694c;
-            font-size: 26px;
-            letter-spacing: 2px;
-            margin-bottom: 25px;
-        }
+nav a:hover {
+    color: #ffffff;
+}
 
-        .foto {
-            width: 155px;
-            height: 155px;
-            object-fit: cover;
-            border-radius: 50%;
-            display: block;
-            margin: 20px auto;
-            border: 5px solid #d8c6a0;
-            box-shadow: 0 5px 15px rgba(100, 80, 50, 0.15);
-        }
+/* JUDUL UTAMA */
+body > h2 {
+    text-align: center;
+    color: #f5d77a;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
 
-        .isi-biodata h3 {
-            color: #80694c;
-            font-size: 18px;
-            margin-top: 28px;
-            padding: 12px;
-            background: #f4eee5;
-            border-left: 5px solid #b69b78;
-            border-radius: 8px;
-        }
+/* KARTU BIODATA */
+.biodata {
+    max-width: 550px;
+    margin: 35px auto;
+    padding: 30px 25px;
+    background: #f8f5ef;
+    color: #333333;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    border-top: 6px solid #d4af37;
+}
 
-        .isi-biodata p {
-            padding: 12px;
-            margin: 8px 0;
-            background: #faf8f4;
-            border-radius: 9px;
-            border-bottom: 1px solid #eee5d8;
-            line-height: 1.6;
-            font-size: 14px;
-        }
+/* JUDUL BIODATA */
+.biodata h2 {
+    text-align: center;
+    color: #243b55;
+    font-size: 26px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
 
-        .isi-biodata p b {
-            color: #80694c;
-        }
+/* FOTO PROFIL */
+.foto {
+    width: 155px;
+    height: 155px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #d4af37;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
 
-        .isi-biodata p:hover {
-            background: #f1e9dc;
-            transition: 0.3s;
-        }
+/* JUDUL BAGIAN */
+.isi-biodata h3 {
+    color: #243b55;
+    font-size: 18px;
+    margin-top: 28px;
+    padding: 12px;
+    background: #eee7d9;
+    border-left: 5px solid #d4af37;
+    border-radius: 8px;
+}
 
-        .praktikum {
-            text-align: center;
-            margin-top: 25px;
-        }
+/* DATA PRIBADI */
+.isi-biodata p {
+    padding: 12px;
+    margin: 8px 0;
+    background: #ffffff;
+    border-radius: 9px;
+    border-bottom: 1px solid #e5dccb;
+    line-height: 1.6;
+    font-size: 14px;
+    transition: 0.3s;
+}
 
-        .praktikum a {
-            display: inline-block;
-            padding: 12px 20px;
-            background: #80694c;
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-        }
+/* TULISAN TEBAL */
+.isi-biodata p b {
+    color: #9a7625;
+}
 
-        .praktikum a:hover {
-            background: #b69b78;
-        }
+/* EFEK HOVER */
+.isi-biodata p:hover {
+    background: #eee7d9;
+    transform: translateX(5px);
+}
 
-        @media (max-width: 480px) {
-            body {
-                padding: 12px;
-            }
+/* MENU PRAKTIKUM */
+.praktikum {
+    text-align: center;
+    margin-top: 25px;
+}
 
-            .biodata {
-                padding: 22px 16px;
-            }
+.praktikum h2 {
+    color: #243b55;
+    font-size: 22px;
+}
 
-            .biodata h2 {
-                font-size: 23px;
-            }
+/* TOMBOL PRAKTIKUM */
+.praktikum a {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(
+        135deg,
+        #b8860b,
+        #d4af37
+    );
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
 
-            .isi-biodata p {
-                font-size: 13px;
-            }
-        }
+.praktikum a:hover {
+    background: #243b55;
+    transform: translateY(-3px);
+}
+
+/* TAMPILAN HP */
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    .biodata {
+        padding: 22px 16px;
+    }
+
+    .biodata h2 {
+        font-size: 23px;
+    }
+
+    .foto {
+        width: 135px;
+        height: 135px;
+    }
+
+    .isi-biodata p {
+        font-size: 13px;
+    }
+
+    nav {
+        font-size: 14px;
+    }
+}
+
     </style>
 </head>
 
